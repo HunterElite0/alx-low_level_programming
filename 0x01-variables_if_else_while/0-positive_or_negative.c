@@ -4,7 +4,7 @@
 
 /**
  * main - Code starts here
- *  
+ *
  *
  * Return: 0 - Always true
  */
