@@ -12,7 +12,7 @@
  *Return: 0 or 1
  *
 */
-int print_last_digit(int n, int p)
+int add(int n, int p)
 {
 	return (n + p);
 }
