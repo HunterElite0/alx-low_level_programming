@@ -12,7 +12,8 @@
 */
 int print_last_digit(int n)
 {
-	int p = n % 10;
+	int x = _abs(n);
+	int p = x % 10;
 	_putchar(p+48);
-	return (n % 10);
+	return (x % 10);
 }
