@@ -3,14 +3,14 @@
 #include "main.h"
 
 /**
- *print_last_digit - lol
+ *jack_bauer - lol
  *
- *@n : int
+ *
  *
  *Return: 0 or 1
  *
 */
-void print_alphabet(void)
+void jack_bauer(void)
 {
 	int i;
 	int j;
