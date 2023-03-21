@@ -12,6 +12,7 @@
 */
 int print_last_digit(int n)
 {
-	printf("%d",(n % 10));
+	char p = n % 10;
+	putchar(p);
 	return (n % 10);
 }
