@@ -21,11 +21,11 @@ void times_table(void)
 		for (j = 0; j <= 9; j++)
 		{
 			x = i * j;
-			if (x < 9)
+			if (x <= 9 && j != 9)
 			{
 				printf("%d,  ", x);
 			}
-			else if(j != 9 && i != 9)
+			else if(j != 9)
 			{
 				printf("%d, ", x);
 			}
