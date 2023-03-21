@@ -5,9 +5,9 @@
 /**
  *_islower - lol
  *
- *@c - int
+ *@c : int
  *
- *Return: alphabet
+ *Return: 0 or 1
  *
 */
 int _islower(int c)
