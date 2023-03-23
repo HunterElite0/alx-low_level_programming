@@ -14,14 +14,14 @@ int main(void)
 	long long num = 612852475143;
 	int i;
 
-	for (i = 5; i <= sqrt(num); i+= 6)
+	for (i = 5; i <= sqrt(num); i += 6)
 	{
 		while (num % i == 0)
 		{
 			max = i;
 			num = num / i;
 		}
-		while (num % (i+2) == 0)
+		while (num % (i + 2) == 0)
 		{
 			max = i + 2;
 			num = num / (i + 2);
