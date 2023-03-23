@@ -2,10 +2,10 @@
 #include "main.h"
 
 /**
- * main  - prints FizzBuzz
+ * main - prints FizzBuzz
  *
  *
- * Returns : 0 (Always)
+ * Return: 0 (Always)
 */
 int main(void)
 {
