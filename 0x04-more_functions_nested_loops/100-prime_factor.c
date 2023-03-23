@@ -12,9 +12,9 @@ int main(void)
 {
 	long long max = -9999999999;
 	long long num = 612852475143;
-	int i = 5;
+	int i;
 
-	for (; i <= sqrt(num); i+= 6)
+	for (i = 5; i <= sqrt(num); i+= 6)
 	{
 		while (num % i == 0)
 		{
