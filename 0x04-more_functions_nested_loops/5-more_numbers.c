@@ -2,11 +2,11 @@
 #include "main.h"
 
 /**
- * print_most_numbers - prints nums
+ * more_numbers - prints nums
  *
  *
 */
-void print_most_numbers(void)
+void more_numbers(void)
 {
 	int i;
 	int j;
@@ -15,8 +15,19 @@ void print_most_numbers(void)
 	{
 		for (j = 0; j < 15 ; j++)
 		{
-			_putchar(i + 48);
+			if (j > 9)
+			{
+				int x = (j % 10) + 48;
+
+				_putchar('1');
+				_putchar(x);
+			}
+			else
+			{
+				_putchar(i + 48);
+			}
 		}
+		_putchar('\n');
 	}
 	_putchar('\n');
 }
