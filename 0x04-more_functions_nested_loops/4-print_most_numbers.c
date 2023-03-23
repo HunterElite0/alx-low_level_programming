@@ -2,11 +2,11 @@
 #include "main.h"
 
 /**
- * print_numbers - prints nums
+ * print_most_numbers - prints nums
  *
  *
 */
-void print_numbers(void)
+void print_most_numbers(void)
 {
 	int i;
 
