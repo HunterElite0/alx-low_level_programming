@@ -13,11 +13,15 @@
 void puts2(char *str)
 {
 	int i;
+	int size = strlen(str) - 1;
 
-	putchar(str[0]);
-	for (i = 2; str[i] != '\0'; i += 2)
+	if (size > 0)
 	{
-		putchar(str[i]);
+		putchar(str[0]);
+		for (i = 2; str[i] != '\0'; i += 2)
+		{
+			putchar(str[i]);
+		}
 	}
 	putchar('\n');
 }
