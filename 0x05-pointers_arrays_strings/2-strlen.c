@@ -6,10 +6,16 @@
  *
  *@s : string
  *
- *Returns: size
+ *Returns : int size
 */
 
 int _strlen(char *s)
 {
-	return sizeof(s)/sizeof(int) + 1;
+	int i = 0;
+
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
 }
