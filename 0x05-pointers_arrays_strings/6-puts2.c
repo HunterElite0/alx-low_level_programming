@@ -14,10 +14,10 @@ void puts2(char *str)
 {
 	int i;
 
-	putchar(s[0]);
-	for (i = 2; s[i] != '\0'; i += 2)
+	putchar(str[0]);
+	for (i = 2; str[i] != '\0'; i += 2)
 	{
-		putchar(s[i]);
+		putchar(str[i]);
 	}
 	putchar('\n');
 }
