@@ -12,15 +12,13 @@
 */
 char *_strcpy(char *a, char *n)
 {
-	int size = strlen(n);
-	int i;
-
-	if (size > 0)
+	i = 0;
+	while (src[i] != '\0')
+		i++;
+	sz = i;
+	for (i = 0; i <= sz; i++)
 	{
-		for (i = 0; n[i] != '\0'; i++)
-		{
-			a[i] = n[i];
-		}
+		des[i] = src[i];
 	}
-	return (a);
+	return (des);
 }
