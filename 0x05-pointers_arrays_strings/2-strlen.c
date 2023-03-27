@@ -6,7 +6,7 @@
  *
  *@s : string
  *
- *Returns : int size
+ *Return: int size
 */
 
 int _strlen(char *s)
