@@ -17,7 +17,7 @@ char *_strcpy(char *a, char *n)
 
 	if (size > 0)
 	{
-		for (i = 0; i < size; i++)
+		for (i = 0; n[i] != '\0'; i++)
 		{
 			a[i] = n[i];
 		}
