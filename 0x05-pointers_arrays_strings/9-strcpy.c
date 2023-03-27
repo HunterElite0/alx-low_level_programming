@@ -5,20 +5,23 @@
 /**
  *_strcpy - copies string
  *
- *@a : string
- *@n : string
+ *@dest : string
+ *@src : string
  *
  *Return: string
 */
-char *_strcpy(char *a, char *n)
+char *_strcpy(char *dest, char *src)
 {
+	int i;
+	int size;
+
 	i = 0;
 	while (src[i] != '\0')
 		i++;
-	sz = i;
-	for (i = 0; i <= sz; i++)
+	size = i;
+	for (i = 0; i <= size; i++)
 	{
-		des[i] = src[i];
+		dest[i] = src[i];
 	}
-	return (des);
+	return (dest);
 }
