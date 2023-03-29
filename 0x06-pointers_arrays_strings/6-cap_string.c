@@ -18,29 +18,29 @@ char *cap_string(char *a)
 	{
 		if (a[i - 1] == ' ')
 			a[i] = toupper(a[i]);
-		if (a[i - 1] == '\t')
+		else if (a[i - 1] == '\t')
 			a[i] = toupper(a[i]);
-		if (a[i - 1] == '\n')
+		else if (a[i - 1] == '\n')
 			a[i] = toupper(a[i]);
-		if (a[i - 1] == ',')
+		else if (a[i - 1] == ',')
 			a[i] = toupper(a[i]);
-		if (a[i - 1] == ';')
+		else if (a[i - 1] == ';')
 			a[i] = toupper(a[i]);
-		if (a[i - 1] == '.')
+		else if (a[i - 1] == '.')
 			a[i] = toupper(a[i]);
-		if (a[i - 1] == '!')
+		else if (a[i - 1] == '!')
 			a[i] = toupper(a[i]);
-		if (a[i - 1] == '?')
+		else if (a[i - 1] == '?')
 			a[i] = toupper(a[i]);
-		if (a[i - 1] == '"')
+		else if (a[i - 1] == '"')
 			a[i] = toupper(a[i]);
-		if (a[i - 1] == '(')
+		else if (a[i - 1] == '(')
 			a[i] = toupper(a[i]);
-		if (a[i - 1] == ')')
+		else if (a[i - 1] == ')')
 			a[i] = toupper(a[i]);
-		if (a[i - 1] == '{')
+		else if (a[i - 1] == '{')
 			a[i] = toupper(a[i]);
-		if (a[i - 1] == '}')
+		else if (a[i - 1] == '}')
 			a[i] = toupper(a[i]);
 	}
 
