@@ -14,10 +14,9 @@
 char *_strncat(char *dest, char *src, int n)
 {
 	int size = strlen(dest);
-	int size2 = strlen(src);
 	int i;
 
-	if (n < size2)
+	if (n < 98-size)
 	{
 		for (i = 0; i < n; i++)
 		{
