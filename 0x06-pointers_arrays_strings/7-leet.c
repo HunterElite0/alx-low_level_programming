@@ -27,4 +27,4 @@ char *leet(char *a)
 			}
 		}
 	}
-
+}
