@@ -13,7 +13,7 @@
 */
 char *_strncat(char *dest, char *src, int n)
 {
-	int size = strlen(dest);
+	int size = strlen(dest) - 1;
 	int i;
 
 	if (n <= 98)
