@@ -12,10 +12,11 @@
 */
 char *leet(char *a)
 {
-	char encode[5] = {'a', 'e', 'o', 't', 'l'};
-	char decode[5] = {'4', '3', '0', '7', '1'};
 	int i;
 	int j;
+
+	char encode[5] = {'a', 'e', 'o', 't', 'l'};
+	char decode[5] = {'4', '3', '0', '7', '1'};
 
 	for (i = 0; a[i] != '\0'; i++)
 	{
