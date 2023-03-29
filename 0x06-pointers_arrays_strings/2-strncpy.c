@@ -13,8 +13,7 @@
 */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int size = strlen(dest);
-	int i = 0;
+	int i;
 
 	if (n <= 98)
 	{
