@@ -21,7 +21,5 @@ char *_strcat(char *dest, char *src)
 		dest[i + size] = src[i];
 	}
 
-	printf("%s", dest);
-
 	return (dest);
 }
