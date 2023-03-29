@@ -13,9 +13,10 @@
 */
 char *_strncat(char *dest, char *src, int n)
 {
-	int size = strlen(dest);
+	int size;
 	int i;
 
+	size = strlen(src);
 	if (n <= strlen(src))
 	{
 		for (i = 0; i < n; i++)
