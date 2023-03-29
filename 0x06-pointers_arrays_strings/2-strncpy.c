@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- *_strncat - appends strings
+ *_strncpy - appends strings
  *
  *@src : string
  *@dest : string
