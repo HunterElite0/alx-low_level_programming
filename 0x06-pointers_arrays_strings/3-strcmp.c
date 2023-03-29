@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- *strcmp - copies strings
+ *_strcmp - copies strings
  *
  *@s1 : string
  *@s2 : string
