@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 #include "main.h"
 
 /**
@@ -9,8 +10,8 @@
 */
 int main(void)
 {
-	long long max = -9999999999;
-	long long num = 612852475143;
+	long max = -9999999999;
+	long num = 612852475143;
 	int i;
 
 	for (i = 5; i <= sqrt(num); i += 6)
@@ -26,6 +27,6 @@ int main(void)
 			num = num / (i + 2);
 		}
 	}
-	printf("%lld\n", max);
+	printf("%ld\n", max);
 	return (0);
 }
