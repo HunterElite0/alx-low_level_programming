@@ -2,12 +2,14 @@
 
 /**
  * main - check the code
- * @a: an array of integers
- * @n: the number of elements to swap
+ * @argc: arguement count
+ * @argv: arguments
  *
  * Return: nothing.
  */
 int main(int argc, char **argv)
 {
 	printf("%s", argv[0]);
+
+	return (0);
 }
