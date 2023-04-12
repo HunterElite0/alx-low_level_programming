@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * strdup - Main code
+ * _strdup - Main code
  *
  * @str: string
  *
@@ -24,6 +24,10 @@ char *_strdup(char *str)
 		size++;
 	}
 	pstr = (char *) malloc(sizeof(char) * (size + 1));
+	if (pstr == NULL)
+	{
+		return (NULL);
+	}
 	for (i = 0; i <= size; i++)
 	{
 		pstr[i] = str[i];
