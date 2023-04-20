@@ -1,46 +1,45 @@
 #include "variadic_functions.h"
 /**
- * print_all - sums all numbers
- *
- * @format: types of parameters
+ * print_all - prints anything
+ * @format: list of types of arguments passed to the function
  */
 void print_all(const char *const format, ...)
 {
-	va_list v;
-	char *string;
-	int size = 0, i = 0;
+	int i = 0;
+	char *str, *sep = "";
 
-	va_start(v, format);
-	while (format[i++] != '\0')
-		size++;
-	i = 0;
-	while (i < size)
+	va_list list;
+
+	va_start(list, format);
+	if (format)
 	{
-		switch (format[i])
+		while (format[i])
 		{
-		case 'c':
-			printf("%c", va_arg(v, int));
-			break;
-		case 'i':
-			printf("%d", va_arg(v, int));
-			break;
-		case 'f':
-			printf("%f", va_arg(v, double));
-			break;
-		case 's':
-			string = va_arg(v, char *);
-			if (string == NULL)
-				string = "(nil)";
-			printf("%s", string);
-			break;
-		default:
+			switch (format[i])
+			{
+			case 'c':
+				printf("%s%c", sep, va_arg(list, int));
+				break;
+			case 'i':
+				printf("%s%d", sep, va_arg(list, int));
+				break;
+			case 'f':
+				printf("%s%f", sep, va_arg(list, double));
+				break;
+			case 's':
+				str = va_arg(list, char *);
+				if (!str)
+					str = "(nil)";
+				printf("%s%s", sep, str);
+				break;
+			default:
+				i++;
+				continue;
+			}
+			sep = ", ";
 			i++;
-			continue;
 		}
-		if (i != size - 1)
-			printf(", ");
-		i++;
 	}
-	va_end(v);
 	printf("\n");
+	va_end(list);
 }
