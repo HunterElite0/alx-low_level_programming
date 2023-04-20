@@ -1,3 +1,4 @@
+#include <stdarg.h>
 /**
  * sum_them_all - sums all numbers
  *
@@ -7,15 +8,14 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
+	int result = 0;
+	va_list v;
+	unsigned int i = 0;
+
 	if (n == 0)
 	{
 		return (0);
 	}
-
-	int result = 0;
-	va_list v;
-	int i = 0;
-
 	va_start(v, n);
 	for (i = 0; i < n; i++)
 	{
