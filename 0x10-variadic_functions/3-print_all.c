@@ -1,6 +1,9 @@
-#include "variadic_functions.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdarg.h>
 /**
  * print_all - sums all numbers
+ *
  * @format: types of parameters
  */
 void print_all(const char *const format, ...)
@@ -29,9 +32,11 @@ void print_all(const char *const format, ...)
 		case 's':
 			string = va_arg(v, char *);
 			if (string == NULL)
+			{
 				printf("(nil)");
-			else
-				printf("%s", string);
+				break;
+			}
+			printf("%s", string);
 			break;
 		default:
 			type = 1;
