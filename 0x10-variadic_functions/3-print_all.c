@@ -12,7 +12,7 @@ void print_all(const char *const format, ...)
 	char *string;
 	int size = 0;
 	int type = 0;
-	unsigned int i = 0;
+	int i = 0;
 	va_start(v, format);
 
 	while (format[i] != '\0')
