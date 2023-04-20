@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdarg.h>
-
 /**
  * print_numbers - sums all numbers
  *
@@ -17,7 +16,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		return;
 	}
-
 	va_start(v, n);
 	for (i = 0; i < (int)n; i++)
 	{
@@ -29,9 +27,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 				printf("%s", separator);
 			}
 		}
-		else
-			printf(" ");
 	}
-	putchar('\n');
+	printf("\n");
 	va_end(v);
 }
+
