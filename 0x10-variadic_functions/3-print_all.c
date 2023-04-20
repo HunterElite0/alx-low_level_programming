@@ -8,7 +8,7 @@ void print_all(const char *const format, ...)
 {
 	va_list v;
 	char *string;
-	int size = 0, type = 0, i = 0;
+	int size = 0, i = 0;
 
 	va_start(v, format);
 	while (format[i++] != '\0')
@@ -40,7 +40,6 @@ void print_all(const char *const format, ...)
 		if (i != size - 1)
 			printf(", ");
 		i++;
-		type = 0;
 	}
 	va_end(v);
 	printf("\n");
