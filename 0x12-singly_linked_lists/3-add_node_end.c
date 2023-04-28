@@ -1,4 +1,10 @@
 #include "lists.h"
+/**
+ * add_node_end - adds node
+ * @head: head
+ * @str: string
+ * Return: ptr to head
+ */
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *temp = *head;

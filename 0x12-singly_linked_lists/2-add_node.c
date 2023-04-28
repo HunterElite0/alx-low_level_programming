@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * add_node_end - adds node
+ * add_node - adds node
  * @head: head
  * @str: string
  * Return: ptr to head
